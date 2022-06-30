@@ -31,7 +31,8 @@ Expected Output:
 
 */ 
  
-let phoneReg = /write your regex here/
+let phoneReg = /\d{3}-\d{3}-\d{4}/g
+console.log(sampleApp.match(phoneReg))
 
 /* 
 
@@ -51,7 +52,8 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
+let emailReg = /\w+@\w+.\w{3}/
+console.log(sampleApp.match(emailReg))
 
 /* 
 
@@ -67,4 +69,5 @@ Expected Output:
 
 */ 
 
-let statusReg = /write your regex here/
+let statusReg = /status/ig
+console.log(sampleApp.search(statusReg))
